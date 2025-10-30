@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>📘 Study Planner</h1>
+        <p class="muted small">Organize your learning subjects easily!</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="homepage.html" class="active">Home</a>
+        <a href="maths.html">Mathematics</a>
+        <a href="physics.html">Physics</a>
+        <a href="chemistry.html">Chemistry</a>
+        <a href="appdev.html">Application Dev</a>
+        <a href="python.html">Python</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h2>Learn faster with concise notes & PDFs</h2>
+        <p class="muted">Short summaries, solved examples, and downloadable resources for quick revision.</p>
+        <p class="hero-ctas">
+          <a class="btn cta" href="chemistry.html">Get Started — Chemistry</a>
+          <a class="btn ghost" href="appdev.html">Explore App Dev</a>
+        </p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">📚</div>
+    </div>
+  </section>
+
+  <main class="container grid" aria-labelledby="subjects-heading">
+    <h3 id="subjects-heading" class="text-center muted" style="grid-column:1/-1; margin-bottom:0.5rem;">Subjects</h3>
+
+    <a href="maths.html" class="card-link">
+      <article class="subject-card">
+        <div class="icon">📐</div>
+        <h2>Mathematics</h2>
+        <p>Formulas, problems, and concepts</p>
+      </article>
+    </a>
+
+    <a href="#" class="card-link">
+      <article class="subject-card">
+        <div class="icon">⚗️</div>
+        <h2>Applied Science</h2>
+        <p>Physics and Chemistry notes with examples</p>
+        <div class="sub-links">
+          <a href="physics.html">⚛️ Physics</a>
+          <a href="chemistry.html">🧪 Chemistry</a>
+        </div>
+      </article>
+    </a>
+
+    <a href="python.html" class="card-link">
+      <article class="subject-card">
+        <div class="icon">🐍</div>
+        <h2>Python</h2>
+        <p>Learn coding step-by-step</p>
+      </article>
+    </a>
+
+    <a href="appdev.html" class="card-link">
+      <article class="subject-card">
+        <div class="icon">💻</div>
+        <h2>Application Development</h2>
+        <p>Design and build your own apps</p>
+      </article>
+    </a>
+  </main>
+
+  <footer>
+    <p>© 2025 Study Planner | Designed by You 💙</p>
+  </footer>
+</body>
+</html>
