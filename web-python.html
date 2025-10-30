@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Planner - Python</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid white;
+      letter-spacing: 2px;
+      background-color: #111;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+
+    /* ===== HORIZONTAL LAYOUT ===== */
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      padding: 30px;
+      overflow-x: auto;
+      gap: 20px;
+    }
+
+    .section {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      min-width: 280px;
+      max-width: 320px;
+      flex: 0 0 auto;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    p, li, a {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .btn {
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #444;
+      color: #888;
+      background-color: #000;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Scrollbar Styling for horizontal scroll */
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Study Planner - Python Subject</h1>
+  </header>
+
+  <div class="main-content">
+    
+    <div class="section">
+      <h2>Welcome</h2>
+      <p>Welcome to your <strong>Python Study Planner</strong> — a sleek black and white planner designed to help you stay organized and focused while learning Python.</p>
+    </div>
+
+    <div class="section">
+      <h2>Topics</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/python/python_intro.asp" target="_blank">Introduction to Python</a></li>
+        <li><a href="https://www.geeksforgeeks.org/python/python-data-types/" target="_blank">Data Types</a></li>
+        <li><a href="https://www.geeksforgeeks.org/python/conditional-statements-in-python/" target="_blank">Conditional statement</a></li>
+        <li><a href="https://www.geeksforgeeks.org/python/loops-in-python/" target="_blank">Loops & Functions</a></li>
+        <li><a href="https://www.geeksforgeeks.org/python/file-handling-python/" target="_blank">File Handling</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Schedule</h2>
+      <ul>
+        <li><b>Mon:</b> Basics</li>
+        <li><b>Tue:</b> Data Types</li>
+        <li><b>Wed:</b> Loops</li>
+        <li><b>Thu:</b> Functions</li>
+        <li><b>Fri:</b> File Handling</li>
+      </ul>
+      <button class="btn">Download Schedule</button>
+    </div>
+
+    <div class="section">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools Python</a></li>
+        <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python Docs</a></li>
+        <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks</a></li>
+      </ul>
+    </div>
+</body>
+</html>
